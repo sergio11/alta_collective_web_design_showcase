@@ -1,0 +1,405 @@
+@charset 'utf-8';
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+  outline: none;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+mark {
+  color: #000;
+  background: #ff0;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup {
+  top: -.5em;
+}
+sub {
+  bottom: -.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  height: 0;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  padding: .35em .625em .75em;
+  margin: 0 2px;
+  border: 1px solid #c0c0c0;
+}
+legend {
+  padding: 0;
+  border: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+ol,ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+/*
+    
+    Base
+    ===================
+    
+*/
+
+*{
+    -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+            box-sizing: border-box;
+}
+
+*::before,
+*::after{
+     -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+            box-sizing: border-box;
+}
+
+body{
+    background-color: #1D1E25;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #3DAE60;
+    text-decoration: underline;
+    transition: all .5s ease-in-out;
+}
+
+p, div, li, h1, h2, h3, h4, td, th, input, select, textarea {
+    font: 20px/1.6 "brandon-grotesque","Brandon Grotesque",sans-serif;
+    color: #FFF;
+    letter-spacing: normal;
+}
+
+h1, h2, h3 {
+    line-height: 1.1;
+}
+
+/*
+    Helpers
+    =====================
+*/
+
+.container{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;/* clear fix hack*/
+    letter-spacing: -0.35em;
+}
+
+.container.intro{
+    height: calc(100% - 126px);
+    position: relative;
+    top: 126px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*
+    
+    Botones
+    ====================
+*/
+
+.btn{
+    padding: 8px 20px;
+    border-radius: 3px;
+}
+
+.btn.transparent{
+    border: 1px solid #3DAE60;
+    color: #3DAE60 !important;
+}
+
+.btn.transparent:hover {
+    background-color: #3DAE60;
+    color: #FFF !important;
+}
+
+
+
+/*
+    Header
+    ====================
+*/
+
+#header{
+    position: fixed;
+    z-index: 99;
+    top: 0;left: 0;
+    height: 126px;
+    width: 100%;
+    padding-top: 70px;
+    transition: all 0.5s ease 0s;
+}
+
+.scrolled #header {
+    background-color: rgba(29, 30, 37, 0.95);
+    padding: 20px 0px;
+    height: 90px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#header .logo,
+#header nav{
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+}
+
+#header .logo {
+    width: 20%;
+}
+
+.scrolled #header{
+    width: 15%;
+}
+
+#header nav {
+    width: 80%;
+    letter-spacing: normal;
+}
+
+#header nav .menu{
+    margin-left: 10%;
+    width: 90%;
+}
+
+.menu{
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap: nowrap;
+}
+
+.menu .menu-item a{
+    color: #FFF;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu .menu-item a:not(.btn):hover{
+    color: #3DAE60;
+}
+
+
+
+
+
+
+/*
+    Content
+    ================
+*/
+
+#intro{
+    height: 100vh;
+    background-image: url(../img/banner1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#intro .title{
+    max-width: 800px;
+}
+
+#intro .title p{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#intro .title h1{
+    max-width: 600px;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#intro .more a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#intro .more a .fa {
+    display: block;
+    color: #3DAE60;
+}
+
+
