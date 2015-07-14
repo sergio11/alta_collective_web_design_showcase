@@ -203,16 +203,12 @@ a{
 */
 
 *{
-    -webkit-box-sizing:border-box;
-        -moz-box-sizing:border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *::before,
 *::after{
-     -webkit-box-sizing:border-box;
-        -moz-box-sizing:border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body{
@@ -240,6 +236,38 @@ h1, h2, h3 {
     line-height: 1.1;
 }
 
+#main > section{
+    height: 100vh;
+}
+
+#main > section h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#main > section h2,
+#main > section h2 + p{
+    margin: 0 auto;
+}
+
+#main > section h3{
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#main > section h3 span{
+    font-size: 10px;
+    display: block;
+    color: #3D3E40;
+    letter-spacing: 3px;
+}
+
+#main > section h3,
+#main > section h3 span{
+    margin: 0px 0px 3px;
+}
+
 /*
     Helpers
     =====================
@@ -252,18 +280,34 @@ h1, h2, h3 {
     max-width: 1200px;
     overflow: hidden;/* clear fix hack*/
     letter-spacing: -0.35em;
+    position: relative;
 }
 
-.container.intro{
-    height: calc(100% - 126px);
-    position: relative;
-    top: 126px;
-    text-align: center;
+.flexBlock{
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: nowrap;
 }
+
+.flexBlock.column{
+    flex-direction: column;
+}
+
+.flexBlock.row{
+    flex-direction: row;
+}
+
+.flexBlock.wrap{
+    flex-wrap: wrap;
+}
+
+
+
+
+
+    
+    
 
 
 /*
@@ -275,6 +319,12 @@ h1, h2, h3 {
 .btn{
     padding: 8px 20px;
     border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-large{
+    padding: 12px 28px;
 }
 
 .btn.transparent{
@@ -368,38 +418,69 @@ h1, h2, h3 {
     ================
 */
 
-#intro{
-    height: 100vh;
-    background-image: url(../img/banner1.jpg);
+#banner{
+    background:url(../img/banner1.jpg) no-repeat center center;
     background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    text-align: center;
 }
 
-#intro .title{
+#banner .container{
+    height: calc(100% - 126px);
+    top: 126px;
+}
+
+#banner .title{
     max-width: 800px;
 }
 
-#intro .title p{
+#banner .title p{
     font-size: 18px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.5);
 }
 
-#intro .title h1{
+#banner .title h1{
     max-width: 600px;
     font-size: 50px;
     font-weight: 300;
 }
 
-#intro .more a {
+#banner .more a {
     color: #FFF;
     text-decoration: none;
 }
 
-#intro .more a .fa {
+#banner .more a .fa {
     display: block;
     color: #3DAE60;
+}
+
+/*
+    SERVICES
+    ======================
+*/
+
+
+#services .title{
+    margin: 0px auto;
+    max-width: 650px;
+}
+
+.service{
+    list-style-position: outside;
+    list-style-type: none;
+    width: 28%;
+}
+
+.service .fa{
+    font-size: 32px;
+    color: #3D3E40;
+    margin: 0px 10px 10px 0px;
+    float: left;
+}
+
+.service p{
+    font-size: .9rem;
 }
 
 
