@@ -227,7 +227,7 @@ a {
 }
 
 p, div, li, h1, h2, h3, h4, td, th, input, select, textarea {
-    font: 20px/1.6 "brandon-grotesque","Brandon Grotesque",sans-serif;
+    font: 20px/1.6 'Didact Gothic', sans-serif;
     color: #FFF;
     letter-spacing: normal;
 }
@@ -236,36 +236,78 @@ h1, h2, h3 {
     line-height: 1.1;
 }
 
-#main > section{
-    height: 100vh;
+/*
+    
+  SECTIONS
+  ===================
+
+*/
+
+#main > section > *{
+  height: 100%;
+  overflow: hidden;
 }
 
+
+#main > section{height: 100vh;}
+
+#main > section.small{height: 50vh;}
+
+#main > section.large{height: 150vh;}
+
+#main > section.rows2 > *{height: calc(100% / 2);}
+
+#main > section.rows3 > *{height: calc(100% / 3);}
+
 #main > section h2{
-    font-size: 50px;
-    font-weight: bold;
+  font-size: 50px;
+  font-weight: bold;
 }
 
 #main > section h2,
 #main > section h2 + p{
-    margin: 0 auto;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 568px){
+
+  #main > section h2 {
+    font-size: 38px;
+    margin: 0 0 20px 0;
+  }
+
+
+}
+
+
+
+
+#main > section h2 span{
+  font-size: 20px;
+  color: #c1c1c1;
 }
 
 #main > section h3{
-    font-size: 18px;
-    font-weight: 300;
-    text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 #main > section h3 span{
-    font-size: 10px;
-    display: block;
-    color: #3D3E40;
-    letter-spacing: 3px;
+  font-size: 10px;
+  color: #3D3E40;
+}
+
+#main > section h2 span,
+#main > section h3 span{
+  display: block;
+  
+  letter-spacing: 3px;
 }
 
 #main > section h3,
 #main > section h3 span{
-    margin: 0px 0px 3px;
+  margin: 0px 0px 3px;
 }
 
 /*
@@ -274,40 +316,33 @@ h1, h2, h3 {
 */
 
 .container{
-    width: 90%;
-    height: 100%;
-    margin: 0 auto;
-    max-width: 1200px;
-    overflow: hidden;/* clear fix hack*/
-    letter-spacing: -0.35em;
-    position: relative;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: hidden;/* clear fix hack*/
+  letter-spacing: -0.35em;
+  position: relative;  
 }
 
-.flexBlock{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap;
+
+.flex-block{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
-.flexBlock.column{
+.flex-block.flex-direction-column{
     flex-direction: column;
 }
 
-.flexBlock.row{
+.flex-block.flex-direction-row{
     flex-direction: row;
 }
 
-.flexBlock.wrap{
+.flex-block.flex-content-wrap{
     flex-wrap: wrap;
 }
-
-
-
-
-
-    
-    
 
 
 /*
@@ -317,25 +352,84 @@ h1, h2, h3 {
 */
 
 .btn{
-    padding: 8px 20px;
-    border-radius: 3px;
-    text-decoration: none;
-    text-transform: uppercase;
+  display: inline-block;
+  padding: 8px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.btn-large{
-    padding: 12px 28px;
+.btn.btn-large{
+  padding: 12px 28px;
 }
 
-.btn.transparent{
-    border: 1px solid #3DAE60;
-    color: #3DAE60 !important;
+.btn.btn-full{
+  width: 100%;
+  font-size: 30px;
+  padding: 35px 0;
 }
 
-.btn.transparent:hover {
-    background-color: #3DAE60;
-    color: #FFF !important;
+.btn.btn-roundedCorner{
+  border-radius: 3px;
 }
+
+.btn.btn-transparent{
+  border: 1px solid #3DAE60;
+  color: #3DAE60 !important;
+}
+
+.btn.btn-transparent:hover {
+  background-color: #3DAE60;
+  color: #FFF !important;
+}
+
+.btn.btn-fill{
+  color: #fff;
+  background-color: #3DAE60;
+}
+
+.btn.btn-fill:hover{
+  background-color:#a6ddb7;
+}
+
+
+/*
+  
+  MENUS
+  ========================
+  
+*/
+
+.menu{
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items:center;
+  flex-wrap: nowrap;
+}
+
+.menu .menu-item a{
+  color: #FFF;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu .menu-item a:not(.btn):hover{
+  color: #3DAE60;
+}
+
+.menu-header{
+  width: 90%;
+  margin-left: 10%;
+}
+
+
+
+
 
 
 
@@ -372,41 +466,13 @@ h1, h2, h3 {
     width: 20%;
 }
 
-.scrolled #header{
-    width: 15%;
-}
-
 #header nav {
     width: 80%;
     letter-spacing: normal;
 }
 
-#header nav .menu{
-    margin-left: 10%;
-    width: 90%;
-}
 
-.menu{
-    height: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline-flex;
-    justify-content: space-around;
-    align-items:center;
-    flex-wrap: nowrap;
-}
 
-.menu .menu-item a{
-    color: #FFF;
-    font-size: 14px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.menu .menu-item a:not(.btn):hover{
-    color: #3DAE60;
-}
 
 
 
@@ -462,29 +528,28 @@ h1, h2, h3 {
 
 
 #services .title{
-    margin: 0px auto;
-    max-width: 650px;
+  margin: 0px auto;
+  max-width: 650px;
 }
 
-
-
 .services .service{
-    list-style-position: outside;
-    list-style-type: none;
-    width: 28%;
-    transition:opacity .5s ease-in-out;
+  list-style-position: outside;
+  list-style-type: none;
+  width: 28%;
+  margin-bottom: 20px;
+  transition:opacity .5s ease-in-out;
 }
 
 .services .service .fa{
-    font-size: 32px;
-    color: #3D3E40;
-    margin: 0px 10px 10px 0px;
-    float: left;
+  font-size: 32px;
+  color: #3D3E40;
+  margin: 0px 10px 10px 0px;
+  float: left;
 }
 
 .services .service p{
-    font-size: .9rem;
-    color: #999;
+  font-size: .9rem;
+  color: #999;
 }
 
 
@@ -499,8 +564,29 @@ h1, h2, h3 {
 
 */
 
+#projects{
+  background: transparent url(../img/pattern1.png) center center repeat;
+}
+
+#projects .header p{
+  font-size: 23px;
+}
+
+#projects p{
+  color: #a4a4a4;
+}
+
+
+#projects .service{
+  width: 47%;
+}
+
+#projects .service p{
+  margin-left: 60px;
+}
+
 .projects{
-  height: 100%;
+  height: 400px;
 }
 
 .projects .project{
@@ -571,5 +657,48 @@ h1, h2, h3 {
 #sunshinePhotoCart{
   background-image: url(../img/sunshine-main.jpg);
 }
+
+/*
+  
+  FOOTER
+  ================
+
+*/
+
+#footer{
+  background: #1d1e25;
+}
+
+#footer nav{
+  width: 60%;
+}
+
+#footer .icon{
+  color: #545b5d;
+}
+
+#footer .container{
+  padding: 30px 0;
+}
+
+#footer .social-icons .icon{
+  display: inline-block;
+  font-size: 26px;
+  margin-left: 10px;
+  text-decoration: none;
+  transition:transform .5s linear,color .4s ease-in-out .4s;
+}
+
+#footer .social-icons .icon:hover{
+  transform:scale(1.1);
+  color: #fff;
+}
+
+  
+
+
+
+
+
 
 
