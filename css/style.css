@@ -227,7 +227,7 @@ a {
 }
 
 p, div, li, h1, h2, h3, h4, td, th, input, select, textarea {
-    font: 20px/1.6 "brandon-grotesque","Brandon Grotesque",sans-serif;
+    font: 20px/1.6 'Didact Gothic', sans-serif;
     color: #FFF;
     letter-spacing: normal;
 }
@@ -236,30 +236,28 @@ h1, h2, h3 {
     line-height: 1.1;
 }
 
-#main > section.small{
-  height: 50vh;
-}
+/*
+    
+  SECTIONS
+  ===================
 
-#main > section{
-  height: 100vh;
-}
-
-#main > section.large{
-  height: 150vh;
-}
+*/
 
 #main > section > *{
   height: 100%;
   overflow: hidden;
 }
 
-#main > section.rows2 > *{
-  height: calc(100% / 2);
-}
 
-#main > section.rows3 > *{
-  height: calc(100% / 3);
-}
+#main > section{height: 100vh;}
+
+#main > section.small{height: 50vh;}
+
+#main > section.large{height: 150vh;}
+
+#main > section.rows2 > *{height: calc(100% / 2);}
+
+#main > section.rows3 > *{height: calc(100% / 3);}
 
 #main > section h2{
   font-size: 50px;
@@ -270,6 +268,19 @@ h1, h2, h3 {
 #main > section h2 + p{
   margin: 0 auto;
 }
+
+@media screen and (max-width: 568px){
+
+  #main > section h2 {
+    font-size: 38px;
+    margin: 0 0 20px 0;
+  }
+
+
+}
+
+
+
 
 #main > section h2 span{
   font-size: 20px;
@@ -382,6 +393,39 @@ h1, h2, h3 {
 }
 
 
+/*
+  
+  MENUS
+  ========================
+  
+*/
+
+.menu{
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items:center;
+  flex-wrap: nowrap;
+}
+
+.menu .menu-item a{
+  color: #FFF;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu .menu-item a:not(.btn):hover{
+  color: #3DAE60;
+}
+
+.menu-header{
+  width: 90%;
+  margin-left: 10%;
+}
 
 
 
@@ -431,32 +475,8 @@ h1, h2, h3 {
     letter-spacing: normal;
 }
 
-#header nav .menu{
-    margin-left: 10%;
-    width: 90%;
-}
 
-.menu{
-    height: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline-flex;
-    justify-content: space-around;
-    align-items:center;
-    flex-wrap: nowrap;
-}
 
-.menu .menu-item a{
-    color: #FFF;
-    font-size: 14px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.menu .menu-item a:not(.btn):hover{
-    color: #3DAE60;
-}
 
 
 
@@ -520,6 +540,7 @@ h1, h2, h3 {
   list-style-position: outside;
   list-style-type: none;
   width: 28%;
+  margin-bottom: 20px;
   transition:opacity .5s ease-in-out;
 }
 
@@ -640,6 +661,44 @@ h1, h2, h3 {
 #sunshinePhotoCart{
   background-image: url(../img/sunshine-main.jpg);
 }
+
+/*
+  
+  FOOTER
+  ================
+
+*/
+
+#footer{
+  background: #1d1e25;
+}
+
+#footer nav{
+  width: 60%;
+}
+
+#footer .icon{
+  color: #545b5d;
+}
+
+#footer .container{
+  padding: 30px 0;
+}
+
+#footer .social-icons .icon{
+  display: inline-block;
+  font-size: 26px;
+  margin-left: 10px;
+  text-decoration: none;
+  transition:transform .5s linear,color .4s ease-in-out .4s;
+}
+
+#footer .social-icons .icon:hover{
+  transform:scale(1.1);
+  color: #fff;
+}
+
+  
 
 
 
