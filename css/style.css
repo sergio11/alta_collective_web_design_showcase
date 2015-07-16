@@ -250,11 +250,15 @@ h1, h2, h3 {
 
 #main > section > *{
   height: 100%;
+  overflow: hidden;
 }
 
 #main > section.rows2 > *{
   height: calc(100% / 2);
-  overflow: hidden;
+}
+
+#main > section.rows3 > *{
+  height: calc(100% / 3);
 }
 
 #main > section h2{
@@ -310,31 +314,24 @@ h1, h2, h3 {
 }
 
 
-.flexBlock{
+.flex-block{
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
 }
 
-.flexBlock.column{
+.flex-block.flex-direction-column{
     flex-direction: column;
 }
 
-.flexBlock.row{
+.flex-block.flex-direction-row{
     flex-direction: row;
 }
 
-.flexBlock.wrap{
+.flex-block.flex-content-wrap{
     flex-wrap: wrap;
 }
-
-
-
-
-
-    
-    
 
 
 /*
@@ -344,25 +341,51 @@ h1, h2, h3 {
 */
 
 .btn{
-    padding: 8px 20px;
-    border-radius: 3px;
-    text-decoration: none;
-    text-transform: uppercase;
+  display: inline-block;
+  padding: 8px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.btn-large{
-    padding: 12px 28px;
+.btn.btn-large{
+  padding: 12px 28px;
 }
 
-.btn.transparent{
-    border: 1px solid #3DAE60;
-    color: #3DAE60 !important;
+.btn.btn-full{
+  width: 100%;
+  font-size: 30px;
+  padding: 35px 0;
 }
 
-.btn.transparent:hover {
-    background-color: #3DAE60;
-    color: #FFF !important;
+.btn.btn-roundedCorner{
+  border-radius: 3px;
 }
+
+.btn.btn-transparent{
+  border: 1px solid #3DAE60;
+  color: #3DAE60 !important;
+}
+
+.btn.btn-transparent:hover {
+  background-color: #3DAE60;
+  color: #FFF !important;
+}
+
+.btn.btn-fill{
+  color: #fff;
+  background-color: #3DAE60;
+}
+
+.btn.btn-fill:hover{
+  background-color:#a6ddb7;
+}
+
+
+
+
+
+
 
 
 
