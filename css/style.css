@@ -422,10 +422,6 @@ h1, h2, h3 {
     width: 20%;
 }
 
-.scrolled #header{
-    width: 15%;
-}
-
 #header nav {
     width: 80%;
     letter-spacing: normal;
