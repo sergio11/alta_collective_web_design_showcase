@@ -602,28 +602,6 @@ h1, h2, h3 {
 
 */
 
-#projects{
-  background: transparent url(../img/pattern1.png) center center repeat;
-}
-
-#projects .header p{
-  font-size: 23px;
-}
-
-#projects .service{
-  width: 47%;
-}
-
-@media screen and (max-width: 767px) {
-    
-    #projects .service{
-        width: 100%;
-    }
-}
-
-#projects .service p{
-  margin-left: 60px;
-}
 
 .projects{
   height: 100%;
@@ -689,12 +667,7 @@ h1, h2, h3 {
   transition:opacity .5s ease-in-out .4s;
 }
 
-<<<<<<< HEAD
-.projects .project:hover::before{ background-color:rgba(29, 30, 37, 0.4);  z-index: 1;}
-=======
-
 .projects .project:hover::before{ background-color:rgba(29, 30, 37, 0.4);}
->>>>>>> e48f9fb96f941871f83cbd09d3940f48b419d211
 .projects .project:hover .project-info,
 .projects .project:hover .project-info .project-types,
 .projects .project:hover .project-desc{opacity: 1;}
@@ -718,6 +691,36 @@ h1, h2, h3 {
 
 #sunshinePhotoCart{
   background-image: url(../img/sunshine-main.jpg);
+}
+
+/*
+  
+  WHY
+  ================
+
+*/
+
+#why{
+  background: transparent url(../img/pattern1.png) center center repeat;
+}
+
+#why .header p{
+  font-size: 23px;
+}
+
+#why .service{
+  width: 47%;
+}
+
+@media screen and (max-width: 767px) {
+    
+    #why .service{
+        width: 100%;
+    }
+}
+
+#why .service p{
+  margin-left: 60px;
 }
 
 /*
@@ -748,11 +751,11 @@ h1, h2, h3 {
   font-size: 26px;
   margin-left: 10px;
   text-decoration: none;
-  transition:transform .5s linear,color .4s ease-in-out .4s;
+  transition:transform .2s linear,color .4s ease-in-out .4s;
 }
 
 #footer .social-icons .icon:hover{
-  transform:scale(1.1);
+  transform:scale(1.2);
   color: #fff;
 }
 

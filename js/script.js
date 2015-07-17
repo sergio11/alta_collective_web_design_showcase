@@ -13,7 +13,10 @@
             }else{
                 $("body").removeClass("scrolled");
             }
-        })
+        });
+
+
+        $("#banner").find(".container").children().hide().first().fadeIn(3000).next().delay(2000).fadeIn(3000);
     
     }
     
