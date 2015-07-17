@@ -17,6 +17,8 @@
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
     <header id="header">
@@ -61,7 +63,7 @@
                 </div>
             </div>
         </section>
-        <section id="services">
+        <section id="services" class="section-large">
             <div class="container flex-block  flex-direction-column">
                 <div class="title">
                     <h2>Custom website solutions</h2>
@@ -122,75 +124,82 @@
                 </div>
             </div>
         </section>
-        <section id="projects" class="large  rows2">
-
-            <ul class="projects flex-block  flex-direction-row">
-                <li class="project" id="designs">
-                    <a class="project-info" href="http://www.altacollective.com/project/2712-designs/">
-                        <p class="project-name">2712 Designs</p>
-                        <p class="project-types">Web Design, E-Commerce, Brand Development, Mobile Optimized</p>
-                        <p class="project-desc">E-commerce website selling customizable products via WordPress and WooCommerce</p>
-                    </a>
-                </li>
-                <li class="project" id="myCareMatch">
-                    <a class="project-info" href="http://www.altacollective.com/project/mycarematch/">
-                        <p class="project-name">MyCareMatch</p>
-                        <p class="project-types">Web Design, Web Development, E-Commerce, Brand Development, Mobile Optimized</p>
-                        <p class="project-desc">The easiest way for seniors to find their perfect care match</p>
-                    </a>
-                </li>
-                <li class="project" id="linkPoint360">
-                    <a class="project-info" href="http://www.altacollective.com/project/linkpoint360/">
-                        <p class="project-name">LinkPoint360</p>
-                        <p class="project-types">Web Design, Web Development</p>
-                        <p class="project-desc">Email to CRM integration – simple and seamless</p>
-                    </a>
-                </li>
-                <li class="project" id="freeBirdPhotography">
-                    <a class="project-info" href="http://www.altacollective.com/project/free-bird-photography/">
-                        <p class="project-name">Free Bird Photography</p>
-                        <p class="project-types">Web Design, E-Commerce, Brand Development, Mobile Optimized</p>
-                        <p class="project-desc">Fort Collins wedding and portrait photographer</p>
-                    </a>
-                </li>
-                <li class="project" id="sunshinePhotoCart">
-                    <a class="project-info" href="http://www.altacollective.com/project/sunshine-photo-cart/">
-                        <p class="project-name">Sunshine Photo Cart</p>
-                        <p class="project-types">Web Design, Web Development, E-Commerce, Brand Development, Mobile Optimized</p>
-                        <p class="project-desc"></p>
-                    </a>
-                </li>
-            </ul>
-            <div class="container  flex-block  flex-direction-column">
-                    
-                <header class="header flex-block flex-direction-row">
-                    <h2>Why you need us</h2>
-                    <p>These days your website can be the face of your company which is the determining factor in the success or failure of your business. The choice of who to partner with for your  website and digital marketing strategy is very important. We provide:</p>
-                </header>
-
-                <ul class="services flex-block  flex-direction-row  flex-content-wrap" role="grid">
-                    <li class="service" role="gridcell">
-                        <span class="fa fa-users fa-fw"></span>
-                        <h3>Complete Web Agency</h3>
-                        <p>Web design, development, SEO, email campaigns, logos, copywriting, print work, web hosting and so much more all in one place.</p>
-                    </li>                    
-                    <li class="service" role="gridcell">
-                        <span class="fa fa-leaf fa-fw"></span>
-                        <h3>Business Growth</h3>
-                        <p>Just because you have a website doesn’t mean it’s doing anything for you. We design websites that actually get people to convert and help grow your business online.</p>
+        <section id="projects" class="section-large">
+            
+            <div class="subsection-further">
+                <ul class="projects flex-block  flex-direction-row  tb-flex-content-wrap">
+                    <li class="project" id="designs">
+                        <a class="project-info" href="http://www.altacollective.com/project/2712-designs/">
+                            <p class="project-name">2712 Designs</p>
+                            <p class="project-types">Web Design, E-Commerce, Brand Development, Mobile Optimized</p>
+                            <p class="project-desc">E-commerce website selling customizable products via WordPress and WooCommerce</p>
+                        </a>
                     </li>
-                    <li class="service" role="gridcell">
-                        <span class="fa fa-comments-o fa-fw"></span>
-                        <h3>Boutique Customer Care</h3>
-                        <p>Someone is always here to answer any questions you have. We enjoy an open dialog with clients to ensure we are providing a website that will work just for you.</p>
+                    <li class="project" id="myCareMatch">
+                        <a class="project-info" href="http://www.altacollective.com/project/mycarematch/">
+                            <p class="project-name">MyCareMatch</p>
+                            <p class="project-types">Web Design, Web Development, E-Commerce, Brand Development, Mobile Optimized</p>
+                            <p class="project-desc">The easiest way for seniors to find their perfect care match</p>
+                        </a>
                     </li>
-                    <li class="service" role="gridcell">
-                        <span class="fa fa-lightbulb-o fa-fw"></span>
-                        <h3>Custom Solutions </h3>
-                        <p>Not every business is the same. We’re here to create a custom solution for you and your business, not slap your name on a one-size-fits-nobody template.</p>
-                    </li>                    
+                    <li class="project" id="linkPoint360">
+                        <a class="project-info" href="http://www.altacollective.com/project/linkpoint360/">
+                            <p class="project-name">LinkPoint360</p>
+                            <p class="project-types">Web Design, Web Development</p>
+                            <p class="project-desc">Email to CRM integration – simple and seamless</p>
+                        </a>
+                    </li>
+                    <li class="project" id="freeBirdPhotography">
+                        <a class="project-info" href="http://www.altacollective.com/project/free-bird-photography/">
+                            <p class="project-name">Free Bird Photography</p>
+                            <p class="project-types">Web Design, E-Commerce, Brand Development, Mobile Optimized</p>
+                            <p class="project-desc">Fort Collins wedding and portrait photographer</p>
+                        </a>
+                    </li>
+                    <li class="project" id="sunshinePhotoCart">
+                        <a class="project-info" href="http://www.altacollective.com/project/sunshine-photo-cart/">
+                            <p class="project-name">Sunshine Photo Cart</p>
+                            <p class="project-types">Web Design, Web Development, E-Commerce, Brand Development, Mobile Optimized</p>
+                            <p class="project-desc"></p>
+                        </a>
+                    </li>
                 </ul>
             </div>
+            
+            <div class="subsection-outstanding">
+                
+                <div class="container flex-block  flex-direction-column">
+                    
+                    <header class="header flex-block flex-direction-row  tb-flex-direction-column">
+                        <h2>Why you need us</h2>
+                        <p>These days your website can be the face of your company which is the determining factor in the success or failure of your business. The choice of who to partner with for your  website and digital marketing strategy is very important. We provide:</p>
+                    </header>
+
+                    <ul class="services flex-block  flex-direction-row  flex-content-wrap  tb-flex-direction-column" role="grid">
+                        <li class="service" role="gridcell">
+                            <span class="fa fa-users fa-fw"></span>
+                            <h3>Complete Web Agency</h3>
+                            <p>Web design, development, SEO, email campaigns, logos, copywriting, print work, web hosting and so much more all in one place.</p>
+                        </li>                    
+                        <li class="service" role="gridcell">
+                            <span class="fa fa-leaf fa-fw"></span>
+                            <h3>Business Growth</h3>
+                            <p>Just because you have a website doesn’t mean it’s doing anything for you. We design websites that actually get people to convert and help grow your business online.</p>
+                        </li>
+                        <li class="service" role="gridcell">
+                            <span class="fa fa-comments-o fa-fw"></span>
+                            <h3>Boutique Customer Care</h3>
+                            <p>Someone is always here to answer any questions you have. We enjoy an open dialog with clients to ensure we are providing a website that will work just for you.</p>
+                        </li>
+                        <li class="service" role="gridcell">
+                            <span class="fa fa-lightbulb-o fa-fw"></span>
+                            <h3>Custom Solutions </h3>
+                            <p>Not every business is the same. We’re here to create a custom solution for you and your business, not slap your name on a one-size-fits-nobody template.</p>
+                        </li>                    
+                    </ul>
+                </div>
+            </div>
+            
         </section>
         <footer id="footer">
             <a href="#" class="btn btn-full btn-fill">Work with us</a>
@@ -226,7 +235,5 @@
         </footer>
     </main>
 
-    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
