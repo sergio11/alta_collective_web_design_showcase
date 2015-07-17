@@ -427,15 +427,9 @@ h1, h2, h3 {
   margin-left: 10%;
 }
 
-
-
-
-
-
-
 /*
-    Header
-    ====================
+  Header
+  ====================
 */
 
 #header{
@@ -572,9 +566,9 @@ h1, h2, h3 {
   font-size: 23px;
 }
 
-#projects p{
+/*#projects p{
   color: #a4a4a4;
-}
+}*/
 
 
 #projects .service{
@@ -602,7 +596,7 @@ h1, h2, h3 {
   content: '';
   position: absolute;
   top: 0;left: 0;right: 0;bottom: 0;
-  background-color:rgba(29, 30, 37, 0.88);
+  background-color:rgba(29, 30, 37, 0.80);
   transition:background-color .4s ease-in-out;
 }
 
@@ -632,7 +626,7 @@ h1, h2, h3 {
   transition:opacity .5s ease-in-out .4s;
 }
 
-.projects .project:hover::before{ background-color:rgba(29, 30, 37, 0.4);}
+.projects .project:hover::before{ background-color:rgba(29, 30, 37, 0.4);  z-index: 1;}
 .projects .project:hover .project-info,
 .projects .project:hover .project-info .project-types,
 .projects .project:hover .project-desc{opacity: 1;}
