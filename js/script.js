@@ -16,8 +16,21 @@
         });
 
 
-        $("#banner").find(".container").children().hide().first().fadeIn(3000).next().delay(2000).fadeIn(3000);
-    
+        $(".section-type-banner").find(".container").children().hide().first().fadeIn(3000).next().delay(2000).fadeIn(3000);
+    	
+    	$('.section-type-banner a[href*=#]:not([href=#])').on("click",function(e) {
+    		e.preventDefault();
+    		e.stopPropagation();
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top - 100
+		        }, 1000);
+		      }
+		    }
+		});
     }
     
     $(document).on("DOMContentLoaded",init);
