@@ -279,6 +279,7 @@ h1, h2, h3 {
   font-size: 18px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
+  text-align: center;
 }
 
 #main > section h2{
@@ -305,6 +306,7 @@ section.section-type-banner{
 
 #banner-main{background-image:url(../img/banner1.jpg);}
 #banner-whatWeDo{background-image: url(../img/banner3.jpg);}
+#banner-our-work{background-image: url(../img/banner5.jpg);}
 
 #banner-main .container{
   height: calc(100% - 126px);
@@ -798,7 +800,6 @@ p.highlight{
 
 */
 
-
 .projects{
   height: 100%;
 }
@@ -869,25 +870,16 @@ p.highlight{
 .projects .project:hover .project-desc{opacity: 1;}
 
   
-#designs{
-  background-image: url(../img/2710Designs.jpg);
-}
-
-#myCareMatch{
-  background-image: url(../img/mycarematch.jpg);
-}
-
-#linkPoint360{
-  background-image: url(../img/linkpoint-main.jpg);
-}
-
-#freeBirdPhotography{
-  background-image: url(../img/freebird.jpg);
-}
-
-#sunshinePhotoCart{
-  background-image: url(../img/sunshine-main.jpg);
-}
+#designs{background-image: url(../img/2710Designs.jpg);}
+#myCareMatch{background-image: url(../img/mycarematch.jpg);}
+#linkPoint360{background-image: url(../img/linkpoint-main.jpg);}
+#freeBirdPhotography{background-image: url(../img/freebird.jpg);}
+#sunshinePhotoCart{background-image: url(../img/sunshine-main.jpg);}
+#wirelessSensorNetwork{background-image: url(../img/gassensor-main.jpg);}
+#emsono{background-image: url(../img/emsono-main.jpg);}
+#completeTrailersFeatured{background-image: url(../img/complete-trailers-featured.jpg);}
+#finityFeatured{background-image: url(../img/finity-featured.jpg);}
+#plaidbarnMain{background-image: url(../img/plaidbarn-main.jpg);}
 
 /*
   
@@ -926,6 +918,21 @@ p.highlight{
 
 #process{
   background: transparent url(../img/pattern4.png) center center repeat;
+}
+
+/*
+  
+  OTHER PROYECTS
+  ================
+
+*/
+
+#recent-projects .project{
+  height: 50%;
+}
+
+#other-projects{
+  background: transparent url(../img/pattern2.png) center center repeat;
 }
 
 
