@@ -302,11 +302,17 @@ section.section-type-banner{
   text-align: center;
 }
 
+section.section-type-banner .title,
+section.section-type-banner .more{
+  display: none;
+}
+
 /* custom */
 
 #banner-main{background-image:url(../img/banner1.jpg);}
 #banner-whatWeDo{background-image: url(../img/banner3.jpg);}
 #banner-our-work{background-image: url(../img/banner5.jpg);}
+#banner-about{background-image: url(../img/banner2.jpg);}
 
 #banner-main .container{
   height: calc(100% - 126px);
@@ -560,6 +566,53 @@ p.highlight{
 .list .item .content .clarifications li .fa{
   font-size: 18px;
  }
+
+.teamList{
+  margin:20px auto;
+  text-align: center;
+}
+
+.teamList .item{
+  width: calc(100% / 4);
+  padding: 10px
+}
+
+.teamList .item .data{
+  text-decoration: none;
+}
+
+.teamList .item .data .name{
+  font-size: 24px;
+  color: #FFF;
+}
+
+.teamList .item .data .job,
+.teamList .item .data .location{
+  font-size: 14px;
+}
+
+.teamList .item .data .job{
+  color: #878b91;
+}
+
+.teamList .item .data .location{
+  color: #3dae60;
+}
+
+.teamList .item .data + div{
+  display: none;
+}
+
+.teamList .item .photo{
+  border-radius: 50%;
+  transition:all .5s;
+}
+
+.teamList .item .photo:hover{
+  box-shadow:#3DAE60 0px 0px 10px 5px;
+  transform:scale(1.2) rotate(360deg);
+}
+
 
 
 /*
@@ -931,8 +984,42 @@ p.highlight{
   height: 50%;
 }
 
+#recent-projects .project-menu li {
+  text-transform: uppercase;
+}
+
+
+#recent-projects .project-menu li a{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: block;
+  background-color: #3dae60;
+  color: #1D1E25;
+  font-size: 5rem;
+  text-decoration: none;
+  line-height: 150px;
+  text-align: center;
+}
+
+
+/*font-size: 20px;
+  margin: 0 0 5px 0;*/
+  
+  
 #other-projects{
   background: transparent url(../img/pattern2.png) center center repeat;
+}
+
+/*
+  
+  ABOUT
+  ==============
+  
+*/
+
+#about{
+  background: transparent url(../img/pattern3.png) center center repeat;
 }
 
 
