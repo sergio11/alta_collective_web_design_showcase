@@ -16,7 +16,8 @@
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/scriptGlobal.js"></script>
+    <script type="text/javascript" src="../js/scriptProjects.js"></script>
 </head>
 <body>
 	<header id="header">
@@ -33,7 +34,7 @@
                     <li class="menu-item" role="menuitem">
                         <a href="../services/">Qué Hacemos</a>
                     </li>
-                    <li class="menu-item" role="menuitem">
+                    <li class="menu-item  active" role="menuitem">
                         <a href="./">Nuestro Trabajo</a>
                     </li>
                     <li class="menu-item" role="menuitem">
@@ -59,7 +60,8 @@
             </div>
         </section>
         <section class="section-normal" id="recent-projects">
-            <ul class="project-menu subsection-further flex-block flex-direction-row">
+
+            <ul id="project-menu" class="project-menu subsection-further flex-block  flex-x-content-center">
                 <li>
                     <a href="#" data-project-type="web-design" >
                         <span class="fa fa-desktop"></span>
@@ -81,71 +83,71 @@
                     </a>
                 </li>
             </ul>
-        	<ul class="projects subsection-outstanding flex-block  flex-direction-row  flex-content-wrap">
-                <li class="project" id="designs">
+        	<ul id="projects" class="projects subsection-outstanding flex-block flex-direction-row  flex-content-wrap">
+                <li class="project" id="designs" data-types="web-design e-commerce brand-development mobile">
                     <a class="project-info" href="http://www.altacollective.com/project/2712-designs/">
                         <p class="project-name">2712 Designs</p>
                         <p class="project-types">Web Design, E-Commerce, Brand Development, Mobile Optimized</p>
                         <p class="project-desc">E-commerce website selling customizable products via WordPress and WooCommerce</p>
                     </a>
                 </li>
-                <li class="project" id="myCareMatch">
+                <li class="project" id="myCareMatch" data-types="web-design web-development e-commerce brand-development mobile">
                     <a class="project-info" href="http://www.altacollective.com/project/mycarematch/">
                         <p class="project-name">MyCareMatch</p>
                         <p class="project-types">Web Design, Web Development, E-Commerce, Brand Development, Mobile Optimized</p>
                         <p class="project-desc">The easiest way for seniors to find their perfect care match</p>
                     </a>
                 </li>
-                <li class="project" id="linkPoint360">
+                <li class="project" id="linkPoint360" data-types="web-design web-development">
                     <a class="project-info" href="http://www.altacollective.com/project/linkpoint360/">
                         <p class="project-name">LinkPoint360</p>
                         <p class="project-types">Web Design, Web Development</p>
                         <p class="project-desc">Email to CRM integration – simple and seamless</p>
                     </a>
                 </li>
-                <li class="project" id="freeBirdPhotography">
+                <li class="project" id="freeBirdPhotography" data-types="web-design e-commerce brand-development mobile">
                     <a class="project-info" href="http://www.altacollective.com/project/free-bird-photography/">
                         <p class="project-name">Free Bird Photography</p>
                         <p class="project-types">Web Design, E-Commerce, Brand Development, Mobile Optimized</p>
                         <p class="project-desc">Fort Collins wedding and portrait photographer</p>
                     </a>
                 </li>
-                <li class="project" id="sunshinePhotoCart">
+                <li class="project" id="sunshinePhotoCart" data-types="web-design web-development e-commerce brand-development mobile">
                     <a class="project-info" href="http://www.altacollective.com/project/sunshine-photo-cart/">
                         <p class="project-name">Sunshine Photo Cart</p>
                         <p class="project-types">Web Design, Web Development, E-Commerce, Brand Development, Mobile Optimized</p>
                         <p class="project-desc"></p>
                     </a>
                 </li>
-                <li class="project" id="wirelessSensorNetwork">
+                <li class="project" id="wirelessSensorNetwork" data-types="web-design web-development e-commerce mobile">
                     <a class="project-info" href="http://www.altacollective.com/project/kwj-wireless-sensor-network/">
                         <p class="project-name">KWJ Wireless Sensor Network</p>
                         <p class="project-types">Web Design, Web Development, E-Commerce, Mobile Optimized</p>
                         <p class="project-desc">Monitor toxic gases and the world around you via online connected devices</p>
                     </a>
                 </li>
-                <li class="project" id="emsono">
+                <li class="project" id="emsono" data-types="web-design web-development e-commerce">
                     <a class="project-info" href="http://www.altacollective.com/project/emsono/">
                         <p class="project-name">Emsono</p>
                         <p class="project-types">Web Design, Web Development, E-Commerce</p>
                         <p class="project-desc">Subscription-based e-learning for the medical community</p>
                     </a>
                 </li>
-                <li class="project" id="completeTrailersFeatured">
+                <li class="project" id="completeTrailersFeatured" data-types="web-design">
                     <a class="project-info" href="http://www.altacollective.com/project/complete-trailers/">
                         <p class="project-name">Complete Trailers</p>
                         <p class="project-types">Web Design</p>
                         <p class="project-desc">Custom trailers, North American made exactly as you want</p>
                     </a>
                 </li>
-                <li class="project" id="finityFeatured">
+                <li class="project" data-types="web-design mobile" id="finityFeatured">
                     <a class="project-info" href="http://www.altacollective.com/project/finityit/">
                         <p class="project-name">FinityIT</p>
                         <p class="project-types">Web Design, E-Commerce, Brand Development, Mobile Optimized</p>
                         <p class="project-desc">A custom designed website using WordPress as a content management system</p>
                     </a>
                 </li>
-                <li class="project" id="plaidbarnMain">
+                <li class="project" data-types="web-design e-commerce brand-development mobile" id="plaidbarnMain">
                     <a class="project-info" href="http://www.altacollective.com/project/the-plaid-barn/">
                         <p class="project-name">The Plaid Barn</p>
                         <p class="project-types">Web Design, Mobile Optimized</p>

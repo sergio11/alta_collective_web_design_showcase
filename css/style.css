@@ -394,17 +394,21 @@ section.section-type-banner .more{
   align-items: center;
   flex-wrap: nowrap;
 }
+
+.flex-block.flex-x-content-center{
+  justify-content:center;
+}
     
 .flex-block.flex-direction-column{
-    flex-direction: column;
+  flex-direction: column;
 }
     
 .flex-block.flex-direction-row{
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .flex-block.flex-content-wrap{
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 
@@ -638,6 +642,12 @@ p.highlight{
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.menu .menu-item.active a{
+  padding-bottom: 5px;
+  border-bottom: 2px solid #3DAE60;
+  color: #3DAE60;
 }
 
 .menu .menu-item a:not(.btn):hover{
@@ -917,10 +927,19 @@ p.highlight{
   transition:opacity .5s ease-in-out .4s;
 }
 
-.projects .project:hover::before{ background-color:rgba(29, 30, 37, 0.4);}
+.projects:hover .project{opacity: .3;}
+
+.projects:hover .project:hover{opacity: 1;}
+
+.projects .project:hover::before,
+.projects .project.active::before{ background-color:rgba(29, 30, 37, 0.4);}
+
 .projects .project:hover .project-info,
+.projects .project.active .project-info
 .projects .project:hover .project-info .project-types,
-.projects .project:hover .project-desc{opacity: 1;}
+.projects .project.active .project-info .project-types,
+.projects .project:hover .project-desc,
+.projects .project.active .project-desc{opacity: 1;}
 
   
 #designs{background-image: url(../img/2710Designs.jpg);}
@@ -988,6 +1007,10 @@ p.highlight{
   text-transform: uppercase;
 }
 
+#recent-projects .project-menu li:not(:first-child){
+  margin-left: 45px;
+}
+
 
 #recent-projects .project-menu li a{
   border-radius: 50%;
@@ -998,11 +1021,28 @@ p.highlight{
   color: #1D1E25;
   font-size: 5rem;
   text-decoration: none;
-  line-height: 150px;
   text-align: center;
+  transition:transform .5s ease-in-out,box-shadow .3s linear .6s;
+}
+
+#recent-projects .project-menu li a .fa{
+  padding: 35px 0;
+  transition:text-shadow .5s ease-in-out;
+}
+
+#recent-projects .project-menu li:hover a,
+#recent-projects .project-menu li.active a{
+  transform:scale(1.2);
+  box-shadow:#3dae60 0px 0px 20px;
+}
+
+#recent-projects .project-menu li:hover a .fa,
+#recent-projects .project-menu li.active a .fa{
+  text-shadow:#1D1E25 7px 7px 14px;
 }
 
 
+  
 /*font-size: 20px;
   margin: 0 0 5px 0;*/
   
@@ -1020,6 +1060,20 @@ p.highlight{
 
 #about{
   background: transparent url(../img/pattern3.png) center center repeat;
+}
+
+#map {
+  position: relative;
+}
+
+#map .content{
+  position: absolute;
+  width: 80%;
+  height: 100px;
+  top: 0;left: 0;right: 0;bottom: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 3rem;
 }
 
 
