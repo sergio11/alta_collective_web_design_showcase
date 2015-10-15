@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Contacta con nuestro equipo de diseño web</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Our collective team of Denver web design, development and marketing professionals help small businesses succeed online.">
+    <meta name="author" content="Sergio Sánchez">
+    <script type="text/javascript" src="../js/modernizr.js"></script>
+    <link rel="stylesheet" type='text/css' href="../css/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type='text/css' href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/powerange.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/dropzone.min.css"/>
+    <script type="application/javascript" src="../js/prefixfree.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/powerange.min.js"></script>
+    <script type="text/javascript" src="../js/dropzone.min.js"></script>
+    <script type="text/javascript" src='../js/scriptContact.js'></script>
+</head>
+<body id="banner-contant">
+	<main id="main">
+		<a href="#" class="btn btn-back" id="back"><i class="fa fa-close"></i></a>
+		<div class="container" id="contact">
+			<a class="logo" href="http://localhost/altaCollective/">
+                <img src="../img/logo.png" alt="Alta Collective">
+            </a>
+			<div class="contact-methods">
+				<a href="tel:+13038054422"><i class="fa fa-phone"></i> (303) 805-4422</a>
+				<a href="mailto:hello@altacollective.com"><i class="fa fa-envelope"></i> hello@altacollective.com</a>
+			</div>
+			<form class='form' method="post" enctype="multipart/form-data" action="" autocomplete='off'>
+				<div class="validation_error">Hubo un problema con el envío. Los errores se han destacado a continuación.</div>
+				<fieldset class='form-body'>
+					<div class="form-control-group">
+						<label class="form-label"></label>
+						<input type='text' id="" class='form-input' tabindex="1" placeholder='Nombre' autofocus/>
+						<p class="validation-message">El nombre es requerido</p>
+					</div>
+					<div class="form-control-group form-control-group-error">
+						<label class="form-label"></label>
+						<input type='email' id="" class='form-input' tabindex="2" placeholder='Email'/>
+						<p class="validation-message">El email no es válido</p>
+					</div>
+					<div class="form-control-group">
+						<label class="form-label"></label>
+						<input type = "tel" id="" class='form-input' tabindex="3" placeholder='Teléfono'/>
+						<p class="validation-message">Número de teléfono no válido</p>
+					</div>
+					<div class="form-control-group">
+						<label class="form-label"></label>
+						<input type='text' id="" class='form-input' tabindex="4" placeholder='Compañía / Organización'/>
+					</div>
+					<div class="form-control-group">
+						<label class="form-label"></label>
+						<input type='url' id="" class='form-input' tabindex="5" placeholder='Sitio Web Actual'/>
+					</div>
+
+					<div class="form-control-group">
+						<label class="form-label">Presupuesto</label>
+						<p class="form-control-description">Un presupuesto transparente nos ayudará a asegurar que se cumplan las expectativas . Ballparks están bien.</p>
+						<div class="slider-wrapper" class="js-range">
+				            <input type="text" class="js-min-max-start" />
+				         </div>
+					</div>
+
+					<div class="form-control-group">
+						<label class="form-label">Sobre el Proyecto</label>
+						<p class="form-control-description">Describir los proyectos , requisitos , objetivos o características especiales.</p>
+						<textarea name="description" class="textarea" tabindex="11" rows="10" cols="50"></textarea>
+					</div>
+
+					<div class="form-control-group">
+						<label class="form-label">Archivos Adjuntos</label>
+						<p class="form-control-description">Sube los archivos o documentos pertinentes que ayudaría a entender su proyecto.</p>
+						<div id="dropzone" class="dropzone dropzone-previews">
+							<div class="fallback">
+						    	<input name="file" type="file" multiple />
+						  	</div>
+						</div>
+					</div>
+
+				</fieldset>
+				<div class="flex-block">
+					<input type="submit" class='btn btn-fill' value="Enviar"/>
+				</div>
+				
+			</form>
+		</div>
+	</main>
+	<footer id="footer">
+        <div class="container flex-block flex-direction-row">
+            <a class="logo" href="http://localhost/altaCollective/">
+                <img src="../img/logo.png" alt="Alta Collective"/>
+            </a>
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Site Map</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a class="icon" href="https://www.facebook.com/altacollective" target="_blank">
+                    <span class="fa fa-facebook"></span>
+                </a>
+                <a class="icon" href="https://www.twitter.com/altacoweb" target="_blank">
+                    <span class="fa fa-twitter"></span>
+                </a>
+                <a class="icon" href="https://www.linkedin.com/company/alta-collective" target="_blank">
+                    <span class="fa fa-linkedin"></span>
+                </a>
+                <a class="icon" href="https://www.google.com/+AltaCollective" target="_blank">
+                    <span class="fa fa-google-plus"></span>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,4 +1,4 @@
-@charset 'utf-8';
+﻿@charset 'utf-8';
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
@@ -313,6 +313,12 @@ section.section-type-banner .more{
 #banner-whatWeDo{background-image: url(../img/banner3.jpg);}
 #banner-our-work{background-image: url(../img/banner5.jpg);}
 #banner-about{background-image: url(../img/banner2.jpg);}
+#banner-blog{background-image: url(../img/banner6.jpg);}
+#banner-contant{
+  background-image: url(../img/banner7.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
 
 #banner-main .container{
   height: calc(100% - 126px);
@@ -463,6 +469,7 @@ p.highlight{
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  border:none;
 }
 
 .btn.btn-large{
@@ -804,6 +811,161 @@ p.highlight{
 }
 
 
+/* 
+  POSTs
+  ==============
+*/
+
+.post{
+  padding: 0 0 75px 0;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  width: 80%;
+  margin: 75px auto;
+}
+
+.post .post-header{
+  padding: .5rem 1rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.post .post-header .post-title{
+  font-size: 2.7rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.post .post-header .post-title a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.post .post-header .post-data{
+  font-size:.8rem;
+  color: #c1c1c1;
+  padding-bottom: 0.7rem;
+}
+
+.post .post-content p,
+.post .post-footer p{
+  padding: 0 3.5rem;
+}
+
+/*
+  
+  FORMS
+  ===================
+
+*/
+
+.form{
+  width: 85%;
+  margin: .5rem auto 7rem auto;
+  text-align: left;
+}
+
+.form .validation_error{
+  color: #FF0000;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 1.6em;
+  border-top: 2px solid #790000;
+  border-bottom: 2px solid #790000;
+  padding: 1rem 0;
+  clear: both;
+  width: 97.5%;
+}
+
+.form .form-body{
+  padding: 0.5 1rem;
+  border:none;
+}
+
+.form .form-body .form-control-group{
+  position: relative;
+  text-align: center;
+}
+
+.form .form-body .form-control-group .form-label{
+  margin: .625em 0 .5em;
+  font-weight: 700;
+  font-size: 1rem;
+  display: inline-block;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.form .form-body .form-control-group .form-control-description{
+  margin-bottom: .75em;
+  padding: .625em 0 0;
+  color: #bbb;
+  width: 100%;
+  font-size: .8rem;
+}
+
+.form .form-body .form-control-group .form-input,
+.form .form-body .form-control-group .textarea{
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 15px 3%;
+  border-radius: 3px;
+  border: none;
+  background-color: rgba(29,30,37,.8);
+  font-size: 1.5rem;
+  width: 94%;
+  margin: .5rem 0;
+  text-indent: .25rem;
+  letter-spacing: normal;
+}
+
+.form .form-body .form-control-group .textarea{
+  height: 9.375em;
+  resize: none;
+}
+
+.form .form-body .form-control-group .validation-message{
+  display: none;
+}
+
+.form .form-body .form-control-group.form-control-group-error{
+  background: none;
+  border: 2px solid #FF0000;
+  padding: 1.5rem 0;
+}
+
+
+.form .form-body .form-control-group.form-control-group-error .form-input{
+  border: 1px solid #790000;
+}
+
+
+.form .form-body .form-control-group.form-control-group-error .validation-message{
+  display: block;
+  white-space: nowrap;
+  margin: .188em 0 .75em;
+  color: #bbb;
+  text-align: center;
+  font-size: .875em;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 1.5;
+  clear: both;
+}
+
+.form .form-body .form-control-group .slider-wrapper{
+  width: 85%;
+  margin:2rem auto;
+
+}
+
+
+
+
 
 /*
     Content
@@ -1047,7 +1209,8 @@ p.highlight{
   margin: 0 0 5px 0;*/
   
   
-#other-projects{
+#other-projects,
+#our-posts{
   background: transparent url(../img/pattern2.png) center center repeat;
 }
 
@@ -1075,6 +1238,43 @@ p.highlight{
   text-align: center;
   font-size: 3rem;
 }
+
+/*
+  CONTACT
+  ============
+
+*/
+
+#contact{
+  text-align: center;
+}
+
+#contact .logo{
+  display: inline-block;
+  margin: 3rem 0;
+}
+
+.contact-methods{
+  text-align: center;
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+}
+
+.contact-methods a{
+  color: #fff;
+  text-decoration: none;
+  margin: 0 .8rem;
+}
+
+.contact-methods a:hover{
+  color: #3dae60;
+}
+
+.contact-methods a .fa{
+  color: #3dae60;
+  margin-right: .3rem;
+}
+
 
 
 /*
