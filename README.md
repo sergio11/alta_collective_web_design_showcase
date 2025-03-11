@@ -1,7 +1,10 @@
 # AltaCollective - Web Design & Online Marketing Studio showcase 🌐💼🚀
 
-## Overview
 Welcome to the AltaCollective repository! We are a dynamic web design and online marketing studio dedicated to crafting effective websites and innovative digital marketing strategies. Our mission is to empower businesses to thrive in the digital landscape.
+
+## ⚠️ Disclaimer  
+**This is a practice project for learning purposes only.** AltaCollective is **not a real agency**, and this repository serves as an educational exercise in **HTML5, CSS3, JavaScript, and responsive design**. 
+
 
 ## About AltaCollective 💡🔗
 At AltaCollective, we specialize in creating tailor-made web solutions and online marketing campaigns that drive results. Our passion lies in helping businesses prosper by harnessing the power of the internet. Whether it's a sleek website, a strategic SEO campaign, or engaging social media content, we've got you covered.
