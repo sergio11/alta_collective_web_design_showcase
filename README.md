@@ -28,13 +28,6 @@ Here are some images showcasing this learning project in web design and digital 
 
 ![altaCollective](captura2.JPG "altaCollective")
 
-## How to Collaborate 🤝🌱
-1. Clone this repository to your local machine.
-2. Explore our web design and online marketing projects.
-3. Get in touch with us to discuss collaboration opportunities.
-
-Thank you for visiting the AltaCollective GitHub repository. We look forward to helping your business thrive in the digital age! 🌐💪
-
 ## Visitors Count
 
 <img width="auto" src="https://profile-counter.glitch.me/altaCollective/count.svg" />
